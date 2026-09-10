@@ -1,0 +1,7 @@
+{% extends "myapp/base.html" %}
+{% block content %}
+<h2>{{ item.name }}</h2>
+<p><b>Цена:</b> {{ item.price }} ₽</p>
+<p>{{ item.description }}</p>
+<a href="{% url 'index' %}">← Назад</a>
+{% endblock %}
